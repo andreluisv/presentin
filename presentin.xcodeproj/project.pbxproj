@@ -16,6 +16,9 @@
 		DF9277FF273A15AF005D22B9 /* CabecaModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9277FE273A15AF005D22B9 /* CabecaModalViewController.swift */; };
 		DF927801273A1BC4005D22B9 /* CompartilharViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF927800273A1BC4005D22B9 /* CompartilharViewController.swift */; };
 		DF927803273A1D7D005D22B9 /* NaMedidaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF927802273A1D7D005D22B9 /* NaMedidaViewController.swift */; };
+		DFB6A750274C9667000BA19F /* TorsoModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB6A74F274C9667000BA19F /* TorsoModalViewController.swift */; };
+		DFB6A752274C98FC000BA19F /* PernaModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB6A751274C98FC000BA19F /* PernaModalViewController.swift */; };
+		DFB6A754274C99AC000BA19F /* PesModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB6A753274C99AC000BA19F /* PesModalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		DF9277FE273A15AF005D22B9 /* CabecaModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CabecaModalViewController.swift; sourceTree = "<group>"; };
 		DF927800273A1BC4005D22B9 /* CompartilharViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompartilharViewController.swift; sourceTree = "<group>"; };
 		DF927802273A1D7D005D22B9 /* NaMedidaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaMedidaViewController.swift; sourceTree = "<group>"; };
+		DFB6A74F274C9667000BA19F /* TorsoModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TorsoModalViewController.swift; sourceTree = "<group>"; };
+		DFB6A751274C98FC000BA19F /* PernaModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PernaModalViewController.swift; sourceTree = "<group>"; };
+		DFB6A753274C99AC000BA19F /* PesModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PesModalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,9 @@
 				DF9277FE273A15AF005D22B9 /* CabecaModalViewController.swift */,
 				DF927802273A1D7D005D22B9 /* NaMedidaViewController.swift */,
 				DF927800273A1BC4005D22B9 /* CompartilharViewController.swift */,
+				DFB6A74F274C9667000BA19F /* TorsoModalViewController.swift */,
+				DFB6A751274C98FC000BA19F /* PernaModalViewController.swift */,
+				DFB6A753274C99AC000BA19F /* PesModalViewController.swift */,
 			);
 			path = presentin;
 			sourceTree = "<group>";
@@ -150,8 +159,11 @@
 				DF927801273A1BC4005D22B9 /* CompartilharViewController.swift in Sources */,
 				DF9277EF2739EC38005D22B9 /* ViewController.swift in Sources */,
 				DF9277FF273A15AF005D22B9 /* CabecaModalViewController.swift in Sources */,
+				DFB6A752274C98FC000BA19F /* PernaModalViewController.swift in Sources */,
 				DF9277EB2739EC38005D22B9 /* AppDelegate.swift in Sources */,
+				DFB6A754274C99AC000BA19F /* PesModalViewController.swift in Sources */,
 				DF9277ED2739EC38005D22B9 /* SceneDelegate.swift in Sources */,
+				DFB6A750274C9667000BA19F /* TorsoModalViewController.swift in Sources */,
 				DF927803273A1D7D005D22B9 /* NaMedidaViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
