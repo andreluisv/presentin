@@ -13,6 +13,9 @@
 		DF9277F22739EC38005D22B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF9277F02739EC38005D22B9 /* Main.storyboard */; };
 		DF9277F42739EC3D005D22B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF9277F32739EC3D005D22B9 /* Assets.xcassets */; };
 		DF9277F72739EC3D005D22B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF9277F52739EC3D005D22B9 /* LaunchScreen.storyboard */; };
+		DF9277FF273A15AF005D22B9 /* CabecaModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9277FE273A15AF005D22B9 /* CabecaModalViewController.swift */; };
+		DF927801273A1BC4005D22B9 /* CompartilharViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF927800273A1BC4005D22B9 /* CompartilharViewController.swift */; };
+		DF927803273A1D7D005D22B9 /* NaMedidaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF927802273A1D7D005D22B9 /* NaMedidaViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		DF9277F32739EC3D005D22B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF9277F62739EC3D005D22B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF9277F82739EC3D005D22B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF9277FE273A15AF005D22B9 /* CabecaModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CabecaModalViewController.swift; sourceTree = "<group>"; };
+		DF927800273A1BC4005D22B9 /* CompartilharViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompartilharViewController.swift; sourceTree = "<group>"; };
+		DF927802273A1D7D005D22B9 /* NaMedidaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaMedidaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,9 @@
 				DF9277F32739EC3D005D22B9 /* Assets.xcassets */,
 				DF9277F52739EC3D005D22B9 /* LaunchScreen.storyboard */,
 				DF9277F82739EC3D005D22B9 /* Info.plist */,
+				DF9277FE273A15AF005D22B9 /* CabecaModalViewController.swift */,
+				DF927802273A1D7D005D22B9 /* NaMedidaViewController.swift */,
+				DF927800273A1BC4005D22B9 /* CompartilharViewController.swift */,
 			);
 			path = presentin;
 			sourceTree = "<group>";
@@ -138,9 +147,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF927801273A1BC4005D22B9 /* CompartilharViewController.swift in Sources */,
 				DF9277EF2739EC38005D22B9 /* ViewController.swift in Sources */,
+				DF9277FF273A15AF005D22B9 /* CabecaModalViewController.swift in Sources */,
 				DF9277EB2739EC38005D22B9 /* AppDelegate.swift in Sources */,
 				DF9277ED2739EC38005D22B9 /* SceneDelegate.swift in Sources */,
+				DF927803273A1D7D005D22B9 /* NaMedidaViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,9 +11,16 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
 
-
+    @IBAction func cabecaTouch() {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "cabeca_modal") as! CabecaModalViewController
+        present(vc, animated: true)
+    }
+    
+    @IBAction func compartilharTouch() {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "compartilhar_modal") as! CompartilharViewController
+        present(vc, animated: true)
+    }
 }
-
