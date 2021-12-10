@@ -35,8 +35,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func compartilharTouch() {
-        let vc = storyboard?.instantiateViewController(withIdentifier: "compartilhar_modal") as! CompartilharViewController
-        vc.modalPresentationStyle = .fullScreen
+        let vc = storyboard?.instantiateViewController(withIdentifier: "begin_match") as! InicioMatchViewController
         present(vc, animated: true)
     }
 }

@@ -15,7 +15,12 @@ class NaMedidaViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func nextTouch() {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "main_view_controller") as! ViewController
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true)
+    }
+    
     /*
     // MARK: - Navigation
 
