@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -242,6 +242,9 @@
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="baseBackgroundColor" red="0.078431372550000003" green="0.48627450979999998" blue="0.3803921569" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="salvarTouch" destination="a21-dy-LPb" eventType="touchUpInside" id="tsT-lR-y0a"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tlZ-f8-MRb">
                                         <rect key="frame" x="108" y="514" width="199" height="50"/>
@@ -287,6 +290,11 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FWZ-kH-fje"/>
                     </view>
+                    <connections>
+                        <outlet property="circunferencia" destination="NMX-HX-Cf2" id="zzP-eA-dVf"/>
+                        <outlet property="furosNaOrelha" destination="4mI-5T-2uc" id="w37-A8-hgX"/>
+                        <outlet property="pescoco" destination="Lgw-ws-vQe" id="0Wd-yG-1YN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3ng-h0-2Ha" sceneMemberID="firstResponder"/>
             </objects>
@@ -560,6 +568,9 @@
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="baseBackgroundColor" red="0.078431372550000003" green="0.48627450979999998" blue="0.3803921569" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="salvarTouch" destination="Jsb-K8-G7n" eventType="touchUpInside" id="IeO-eS-wfH"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SGN-Mv-OxM">
                                         <rect key="frame" x="108" y="514" width="199" height="50"/>
@@ -605,6 +616,11 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FkW-65-tnI"/>
                     </view>
+                    <connections>
+                        <outlet property="busto" destination="EYM-OC-Nqm" id="Dlg-Hk-5xt"/>
+                        <outlet property="cintura" destination="mM8-hs-3pK" id="7f0-BU-0SN"/>
+                        <outlet property="quadril" destination="jtX-9t-ffY" id="VUD-VM-nlq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U8E-XJ-ZGL" sceneMemberID="firstResponder"/>
             </objects>
@@ -670,6 +686,9 @@
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="baseBackgroundColor" red="0.078431372550000003" green="0.48627450979999998" blue="0.3803921569" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="salvarTouch" destination="9Yu-Uk-zjH" eventType="touchUpInside" id="tjH-gl-gck"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n4e-ub-Q1y">
                                         <rect key="frame" x="108" y="514" width="199" height="50"/>
@@ -715,6 +734,11 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="yIj-0d-jMH"/>
                     </view>
+                    <connections>
+                        <outlet property="bainha" destination="lMW-s1-vTb" id="rTP-gh-JFp"/>
+                        <outlet property="coxa" destination="bRZ-cg-JOD" id="Pec-mD-QvW"/>
+                        <outlet property="panturrilha" destination="igf-tp-I0t" id="FQr-Yn-i9R"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C5O-Rl-zId" sceneMemberID="firstResponder"/>
             </objects>
@@ -754,6 +778,9 @@
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="baseBackgroundColor" red="0.078431372550000003" green="0.48627450979999998" blue="0.3803921569" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="salvarTouch" destination="95o-Uh-3I7" eventType="touchUpInside" id="ESm-uG-dy1"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qNL-IO-iK2">
                                         <rect key="frame" x="108" y="514" width="199" height="50"/>
@@ -799,6 +826,9 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="aVP-zc-HhM"/>
                     </view>
+                    <connections>
+                        <outlet property="comprimento" destination="G6x-ZB-9Zx" id="67n-nl-0Nt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qb6-nz-5jY" sceneMemberID="firstResponder"/>
             </objects>

@@ -9,8 +9,25 @@ import UIKit
 
 class CabecaModalViewController: UIViewController {
 
+    @IBOutlet var circunferencia: UITextField!
+    @IBOutlet var furosNaOrelha: UITextField!
+    @IBOutlet var pescoco: UITextField!
+
+    var delegate: infoDelegate!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround() 
     }
+    
+    @IBAction func salvarTouch() {
+        self.delegate.addCircunferencia(value: circunferencia.text)
+        self.delegate.addOrelha(value: furosNaOrelha.text)
+        self.delegate.addPescoco(value: pescoco.text)
+        
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    
 
 }
