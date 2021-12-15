@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Model {
+class SelectMatchModel {
     static let matchButtons = [
         CategoryButton(label: "Cabeça", fields: ["Circunferencia", "Furos na orelha", "Pescoço"]),
         CategoryButton(label: "Torso", fields: ["Busto", "Cintura", "Quadril"]),

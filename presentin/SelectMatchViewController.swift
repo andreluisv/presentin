@@ -18,7 +18,7 @@ class SelectMatchViewController: UIViewController, UICollectionViewDataSource, U
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return Model.matchButtons.count
+        return SelectMatchModel.matchButtons.count
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -27,7 +27,7 @@ class SelectMatchViewController: UIViewController, UICollectionViewDataSource, U
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let collectionViewCell = selectMatchCollectionView.dequeueReusableCell(withReuseIdentifier: "viewCell", for: indexPath) as! SelectMatchCollectionViewCell
-        let buttonLabel = Model.matchButtons[indexPath.row].label
+        let buttonLabel = SelectMatchModel.matchButtons[indexPath.row].label
         print(buttonLabel)
         collectionViewCell.buttonLabel.setTitle(buttonLabel, for: .normal)
         return collectionViewCell

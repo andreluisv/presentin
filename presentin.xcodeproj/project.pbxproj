@@ -9,8 +9,9 @@
 /* Begin PBXBuildFile section */
 		646F1E0E275EFD5C0018250B /* InicioMatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646F1E0D275EFD5C0018250B /* InicioMatchViewController.swift */; };
 		646F1E10275FBBEC0018250B /* SelectMatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646F1E0F275FBBEC0018250B /* SelectMatchViewController.swift */; };
-		646F1E12275FBED10018250B /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646F1E11275FBED10018250B /* Model.swift */; };
+		646F1E12275FBED10018250B /* SelectMatchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646F1E11275FBED10018250B /* SelectMatchModel.swift */; };
 		646F1E14275FC4330018250B /* SelectMatchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646F1E13275FC4330018250B /* SelectMatchCollectionViewCell.swift */; };
+		646F1E162768F3880018250B /* MeasureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646F1E152768F3880018250B /* MeasureModel.swift */; };
 		DF9277EB2739EC38005D22B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9277EA2739EC38005D22B9 /* AppDelegate.swift */; };
 		DF9277ED2739EC38005D22B9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9277EC2739EC38005D22B9 /* SceneDelegate.swift */; };
 		DF9277EF2739EC38005D22B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9277EE2739EC38005D22B9 /* ViewController.swift */; };
@@ -28,8 +29,9 @@
 /* Begin PBXFileReference section */
 		646F1E0D275EFD5C0018250B /* InicioMatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioMatchViewController.swift; sourceTree = "<group>"; };
 		646F1E0F275FBBEC0018250B /* SelectMatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectMatchViewController.swift; sourceTree = "<group>"; };
-		646F1E11275FBED10018250B /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		646F1E11275FBED10018250B /* SelectMatchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectMatchModel.swift; sourceTree = "<group>"; };
 		646F1E13275FC4330018250B /* SelectMatchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectMatchCollectionViewCell.swift; sourceTree = "<group>"; };
+		646F1E152768F3880018250B /* MeasureModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureModel.swift; sourceTree = "<group>"; };
 		DF9277E72739EC38005D22B9 /* presentin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = presentin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF9277EA2739EC38005D22B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF9277EC2739EC38005D22B9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,7 +94,8 @@
 				646F1E0D275EFD5C0018250B /* InicioMatchViewController.swift */,
 				646F1E0F275FBBEC0018250B /* SelectMatchViewController.swift */,
 				646F1E13275FC4330018250B /* SelectMatchCollectionViewCell.swift */,
-				646F1E11275FBED10018250B /* Model.swift */,
+				646F1E11275FBED10018250B /* SelectMatchModel.swift */,
+				646F1E152768F3880018250B /* MeasureModel.swift */,
 			);
 			path = presentin;
 			sourceTree = "<group>";
@@ -168,10 +171,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				646F1E162768F3880018250B /* MeasureModel.swift in Sources */,
 				DF927801273A1BC4005D22B9 /* CompartilharViewController.swift in Sources */,
 				DF9277EF2739EC38005D22B9 /* ViewController.swift in Sources */,
 				DF9277FF273A15AF005D22B9 /* CabecaModalViewController.swift in Sources */,
-				646F1E12275FBED10018250B /* Model.swift in Sources */,
+				646F1E12275FBED10018250B /* SelectMatchModel.swift in Sources */,
 				DFB6A752274C98FC000BA19F /* PernaModalViewController.swift in Sources */,
 				646F1E14275FC4330018250B /* SelectMatchCollectionViewCell.swift in Sources */,
 				DF9277EB2739EC38005D22B9 /* AppDelegate.swift in Sources */,
