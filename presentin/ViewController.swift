@@ -11,6 +11,7 @@ class ViewController: UIViewController, infoDelegate {
     func addCircunferencia(value: String?) {
         if value != nil {
             print(value!)
+            UserDefaults.standard.set(value!, forKey: "circunferencia")
         }else {
             print("null value added")
         }
@@ -19,6 +20,7 @@ class ViewController: UIViewController, infoDelegate {
     func addOrelha(value: String?) {
         if value != nil {
             print(value!)
+            UserDefaults.standard.set(value!, forKey: "orelha")
         }else {
             print("null value added")
         }
@@ -27,6 +29,7 @@ class ViewController: UIViewController, infoDelegate {
     func addPescoco(value: String?) {
         if value != nil {
             print(value!)
+            UserDefaults.standard.set(value!, forKey: "pescoco")
         }else {
             print("null value added")
         }
@@ -35,6 +38,7 @@ class ViewController: UIViewController, infoDelegate {
     func addBusto(value: String?) {
         if value != nil {
             print(value!)
+            UserDefaults.standard.set(value!, forKey: "busto")
         }else {
             print("null value added")
         }
@@ -43,6 +47,7 @@ class ViewController: UIViewController, infoDelegate {
     func addCintura(value: String?) {
         if value != nil {
             print(value!)
+            UserDefaults.standard.set(value!, forKey: "cintura")
         }else {
             print("null value added")
         }
@@ -51,6 +56,7 @@ class ViewController: UIViewController, infoDelegate {
     func addQuadril(value: String?) {
         if value != nil {
             print(value!)
+            UserDefaults.standard.set(value!, forKey: "quadril")
         }else {
             print("null value added")
         }
@@ -59,6 +65,7 @@ class ViewController: UIViewController, infoDelegate {
     func addCoxa(value: String?) {
         if value != nil {
             print(value!)
+            UserDefaults.standard.set(value!, forKey: "coxa")
         }else {
             print("null value added")
         }
@@ -67,6 +74,7 @@ class ViewController: UIViewController, infoDelegate {
     func addPanturrilha(value: String?) {
         if value != nil {
             print(value!)
+            UserDefaults.standard.set(value!, forKey: "panturrilha")
         }else {
             print("null value added")
         }
@@ -75,6 +83,7 @@ class ViewController: UIViewController, infoDelegate {
     func addBainha(value: String?) {
         if value != nil {
             print(value!)
+            UserDefaults.standard.set(value!, forKey: "bainha")
         }else {
             print("null value added")
         }
@@ -83,6 +92,7 @@ class ViewController: UIViewController, infoDelegate {
     func addPe(value: String?) {
         if value != nil {
             print(value!)
+            UserDefaults.standard.set(value!, forKey: "pe")
         }else {
             print("null value added")
         }

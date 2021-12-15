@@ -15,7 +15,8 @@ class PesModalViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.hideKeyboardWhenTappedAround() 
+        self.hideKeyboardWhenTappedAround()
+        comprimento.text = UserDefaults.standard.value(forKey: "pe") as? String
     }
     
     @IBAction func salvarTouch() {

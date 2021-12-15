@@ -17,7 +17,10 @@ class TorsoModalViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.hideKeyboardWhenTappedAround() 
+        self.hideKeyboardWhenTappedAround()
+        busto.text = UserDefaults.standard.value(forKey: "busto") as? String
+        cintura.text = UserDefaults.standard.value(forKey: "cintura") as? String
+        quadril.text = UserDefaults.standard.value(forKey: "quadril") as? String
     }
     
     @IBAction func salvarTouch() {
