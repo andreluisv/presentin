@@ -17,6 +17,8 @@ class SelectMatchViewController: UIViewController, UICollectionViewDataSource, U
     @IBOutlet weak var medida3Label: UILabel!
     @IBOutlet weak var medida3Input: UITextField!
     
+    var btnLabel: String! = ""
+    
     var user: User? = nil
     
     override func viewDidLoad() {
@@ -26,6 +28,7 @@ class SelectMatchViewController: UIViewController, UICollectionViewDataSource, U
         resetInputs()
         if(user != nil){
             print(user!.name)
+            
         }
     }
     
@@ -55,6 +58,7 @@ class SelectMatchViewController: UIViewController, UICollectionViewDataSource, U
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let model = SelectMatchModel.matchButtons[indexPath.row]
+        btnLabel = model.label
         resetInputs()
         var i = 0
         for btn in model.fields {
@@ -77,6 +81,62 @@ class SelectMatchViewController: UIViewController, UICollectionViewDataSource, U
     
     @IBAction func nextTouch() {
         let vc = storyboard?.instantiateViewController(withIdentifier: "na_modal") as! NaMedidaViewController
+        vc.match = 100
+        if (btnLabel == "Cabeça"){
+            if (medida1Input.text != nil){
+                let medida = Double(medida1Input.text!) ?? 1
+                let salvo = Double(user?.measures.cabeca.circunferencia ?? 1)
+                vc.match = min(Int(min(medida, salvo)/max(medida, salvo) * 100.0), vc.match)
+            }
+            if (medida2Input.text != nil){
+                let medida = Double(medida2Input.text!) ?? 1
+                let salvo = Double(user?.measures.cabeca.furosOrelha ?? 1)
+                vc.match = min(Int(min(medida, salvo)/max(medida, salvo, 1) * 100.0), vc.match)
+            }
+            if (medida1Input.text != nil){
+                let medida = Double(medida1Input.text!) ?? 1
+                let salvo = Double(user?.measures.cabeca.pescoco ?? 1)
+                vc.match = min(Int(min(medida, salvo)/max(medida, salvo) * 100.0), vc.match)
+            }
+        }else if (btnLabel == "Torso"){
+            if (medida1Input.text != nil){
+                let medida = Double(medida1Input.text!) ?? 1
+                let salvo = Double(user?.measures.torso.busto ?? 1)
+                vc.match = min(Int(min(medida, salvo)/max(medida, salvo) * 100.0), vc.match)
+            }
+            if (medida2Input.text != nil){
+                let medida = Double(medida2Input.text!) ?? 1
+                let salvo = Double(user?.measures.torso.cintura ?? 1)
+                vc.match = min(Int(min(medida, salvo)/max(medida, salvo) * 100.0), vc.match)
+            }
+            if (medida1Input.text != nil){
+                let medida = Double(medida1Input.text!) ?? 1
+                let salvo = Double(user?.measures.torso.quadril ?? 1)
+                vc.match = min(Int(min(medida, salvo)/max(medida, salvo) * 100.0), vc.match)
+            }
+        }else if (btnLabel == "Pernas"){
+            if (medida1Input.text != nil){
+                let medida = Double(medida1Input.text!) ?? 1
+                let salvo = Double(user?.measures.pernas.coxa ?? 1)
+                vc.match = min(Int(min(medida, salvo)/max(medida, salvo) * 100.0), vc.match)
+            }
+            if (medida2Input.text != nil){
+                let medida = Double(medida2Input.text!) ?? 1
+                let salvo = Double(user?.measures.pernas.panturrilha ?? 1)
+                vc.match = min(Int(min(medida, salvo)/max(medida, salvo) * 100.0), vc.match)
+            }
+            if (medida1Input.text != nil){
+                let medida = Double(medida1Input.text!) ?? 1
+                let salvo = Double(user?.measures.pernas.bainha ?? 1)
+                vc.match = min(Int(min(medida, salvo)/max(medida, salvo) * 100.0), vc.match)
+            }
+        }else if (btnLabel == "Pés"){
+            if (medida1Input.text != nil){
+                let medida = Double(medida1Input.text!) ?? 1
+                let salvo = Double(user?.measures.pes.comprimento ?? 1)
+                vc.match = min(Int(min(medida, salvo)/max(medida, salvo) * 100.0), vc.match)
+            }
+        }
         present(vc, animated: true)
     }
 

@@ -8,10 +8,13 @@
 import UIKit
 
 class NaMedidaViewController: UIViewController {
+    
+    var match : Int! = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        print(match)
     }
     
     @IBAction func nextTouch() {
