@@ -18,9 +18,9 @@ class PernaModalViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
-        coxa.text = UserDefaults.standard.value(forKey: "coxa") as? String
-        panturrilha.text = UserDefaults.standard.value(forKey: "panturrilha") as? String
-        bainha.text = UserDefaults.standard.value(forKey: "bainha") as? String
+        coxa.text = delegate.getCoxa()
+        panturrilha.text = delegate.getPanturrilha()
+        bainha.text = delegate.getBainha()
     }
     
     @IBAction func salvarTouch() {

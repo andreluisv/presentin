@@ -18,9 +18,9 @@ class CabecaModalViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
-        circunferencia.text = UserDefaults.standard.value(forKey: "circunferencia") as? String
-        furosNaOrelha.text = UserDefaults.standard.value(forKey: "orelha") as? String
-        pescoco.text = UserDefaults.standard.value(forKey: "pescoco") as? String
+        circunferencia.text = delegate.getCircunferencia()
+        furosNaOrelha.text = delegate.getOrelha()
+        pescoco.text = delegate.getPescoco()
     }
     
     @IBAction func salvarTouch() {
