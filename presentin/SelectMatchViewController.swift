@@ -17,13 +17,16 @@ class SelectMatchViewController: UIViewController, UICollectionViewDataSource, U
     @IBOutlet weak var medida3Label: UILabel!
     @IBOutlet weak var medida3Input: UITextField!
     
-    var username: String = ""
+    var user: User? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
         selectMatchCollectionView.dataSource = self
         selectMatchCollectionView.delegate = self
         resetInputs()
+        if(user != nil){
+            print(user!.name)
+        }
     }
     
     func resetInputs() {

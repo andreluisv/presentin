@@ -877,7 +877,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Display Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1LU-fr-aQf">
-                                        <rect key="frame" x="112" y="282" width="191" height="39"/>
+                                        <rect key="frame" x="8" y="282" width="398" height="39"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                         <nil key="textColor"/>
@@ -905,6 +905,17 @@ bom match!</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ReS-SU-egS">
+                                        <rect key="frame" x="307" y="134" width="45" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="magnifyingglass" catalog="system">
+                                            <color key="baseForegroundColor" systemColor="labelColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="textChanged" destination="nH6-Z0-MDc" eventType="touchUpInside" id="wOD-pN-JJk"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
@@ -933,12 +944,14 @@ bom match!</string>
                         <viewLayoutGuide key="safeArea" id="57g-SP-Jlm"/>
                     </view>
                     <connections>
+                        <outlet property="nameField" destination="1LU-fr-aQf" id="axE-0r-NS8"/>
                         <outlet property="nextButton" destination="CRi-dq-kGg" id="MbX-tS-EVD"/>
+                        <outlet property="textField" destination="FEJ-xf-l9f" id="CHo-oN-8bM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TOG-sk-8i4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1155" y="828"/>
+            <point key="canvasLocation" x="-1155.072463768116" y="827.67857142857144"/>
         </scene>
         <!--Select Match View Controller-->
         <scene sceneID="dNM-0H-bas">
@@ -1014,14 +1027,14 @@ bom match!</string>
                                         </cells>
                                     </collectionView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Medida2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xJ8-do-Noi">
-                                        <rect key="frame" x="27" y="283" width="88" height="28"/>
+                                        <rect key="frame" x="27" y="283" width="361" height="28"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Medida3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ax1-lp-hfP">
-                                        <rect key="frame" x="27" y="362" width="89" height="28"/>
+                                        <rect key="frame" x="27" y="362" width="361" height="28"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                         <nil key="textColor"/>
@@ -1046,7 +1059,7 @@ bom match!</string>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Medida1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ihj-Uh-fLa">
-                                        <rect key="frame" x="27" y="201" width="84" height="28"/>
+                                        <rect key="frame" x="27" y="201" width="361" height="28"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                         <nil key="textColor"/>
@@ -1091,13 +1104,14 @@ bom match!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9e2-nf-EcS" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-378" y="828"/>
+            <point key="canvasLocation" x="-378.26086956521743" y="827.67857142857144"/>
         </scene>
     </scenes>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
         <image name="brain.head.profile" catalog="system" width="114" height="128"/>
         <image name="checkmark" catalog="system" width="128" height="114"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

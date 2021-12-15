@@ -12,6 +12,7 @@
 		646F1E12275FBED10018250B /* SelectMatchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646F1E11275FBED10018250B /* SelectMatchModel.swift */; };
 		646F1E14275FC4330018250B /* SelectMatchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646F1E13275FC4330018250B /* SelectMatchCollectionViewCell.swift */; };
 		646F1E162768F3880018250B /* MeasureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646F1E152768F3880018250B /* MeasureModel.swift */; };
+		646F1E1827698C940018250B /* SelectMatchFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646F1E1727698C940018250B /* SelectMatchFactory.swift */; };
 		DF9277EB2739EC38005D22B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9277EA2739EC38005D22B9 /* AppDelegate.swift */; };
 		DF9277ED2739EC38005D22B9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9277EC2739EC38005D22B9 /* SceneDelegate.swift */; };
 		DF9277EF2739EC38005D22B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9277EE2739EC38005D22B9 /* ViewController.swift */; };
@@ -32,6 +33,7 @@
 		646F1E11275FBED10018250B /* SelectMatchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectMatchModel.swift; sourceTree = "<group>"; };
 		646F1E13275FC4330018250B /* SelectMatchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectMatchCollectionViewCell.swift; sourceTree = "<group>"; };
 		646F1E152768F3880018250B /* MeasureModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureModel.swift; sourceTree = "<group>"; };
+		646F1E1727698C940018250B /* SelectMatchFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectMatchFactory.swift; sourceTree = "<group>"; };
 		DF9277E72739EC38005D22B9 /* presentin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = presentin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF9277EA2739EC38005D22B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF9277EC2739EC38005D22B9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				646F1E13275FC4330018250B /* SelectMatchCollectionViewCell.swift */,
 				646F1E11275FBED10018250B /* SelectMatchModel.swift */,
 				646F1E152768F3880018250B /* MeasureModel.swift */,
+				646F1E1727698C940018250B /* SelectMatchFactory.swift */,
 			);
 			path = presentin;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 				646F1E12275FBED10018250B /* SelectMatchModel.swift in Sources */,
 				DFB6A752274C98FC000BA19F /* PernaModalViewController.swift in Sources */,
 				646F1E14275FC4330018250B /* SelectMatchCollectionViewCell.swift in Sources */,
+				646F1E1827698C940018250B /* SelectMatchFactory.swift in Sources */,
 				DF9277EB2739EC38005D22B9 /* AppDelegate.swift in Sources */,
 				646F1E10275FBBEC0018250B /* SelectMatchViewController.swift in Sources */,
 				DFB6A754274C99AC000BA19F /* PesModalViewController.swift in Sources */,
