@@ -987,7 +987,7 @@ bom match!</string>
                                                             <rect key="frame" x="14" y="12" width="130" height="116"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <accessibility key="accessibilityConfiguration">
-                                                                <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                                                <accessibilityTraits key="traits" image="YES"/>
                                                             </accessibility>
                                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                             <state key="normal" title="Button" image="brain.head.profile" catalog="system">
@@ -1080,6 +1080,12 @@ bom match!</string>
                         <viewLayoutGuide key="safeArea" id="WvQ-ka-kWd"/>
                     </view>
                     <connections>
+                        <outlet property="medida1Input" destination="2Vf-G0-e0I" id="iLd-fj-JPO"/>
+                        <outlet property="medida1Label" destination="ihj-Uh-fLa" id="1ss-Fr-9Q9"/>
+                        <outlet property="medida2Input" destination="Qs8-vT-ysu" id="Pe8-kv-RVf"/>
+                        <outlet property="medida2Label" destination="xJ8-do-Noi" id="gdC-ME-Zl0"/>
+                        <outlet property="medida3Input" destination="SwC-ZQ-xRb" id="Z17-c8-z7s"/>
+                        <outlet property="medida3Label" destination="Ax1-lp-hfP" id="e2Q-nq-A3O"/>
                         <outlet property="selectMatchCollectionView" destination="uIW-ey-3jY" id="WH5-sV-u2T"/>
                     </connections>
                 </viewController>

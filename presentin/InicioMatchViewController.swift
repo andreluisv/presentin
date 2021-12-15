@@ -19,6 +19,7 @@ class InicioMatchViewController: UIViewController {
     
     @IBAction func nextTouch() {
         let vc = storyboard?.instantiateViewController(withIdentifier: "select_match") as! SelectMatchViewController
+        vc.username = "Daniel"
         present(vc, animated: true)
     }
 }
