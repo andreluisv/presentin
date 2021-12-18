@@ -9,7 +9,7 @@ import UIKit
 
 class NaMedidaViewController: UIViewController {
     
-    var match : Int! = 0
+    var match : Bool! = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
