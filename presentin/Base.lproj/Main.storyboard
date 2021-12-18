@@ -996,32 +996,18 @@ bom match!</string>
                                                     <rect key="frame" x="0.0" y="0.0" width="158" height="140"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fLk-ox-RXQ">
-                                                            <rect key="frame" x="14" y="12" width="130" height="116"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Category" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxk-Ig-0wR">
+                                                            <rect key="frame" x="0.0" y="0.0" width="158" height="140"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <accessibility key="accessibilityConfiguration">
-                                                                <accessibilityTraits key="traits" image="YES"/>
-                                                            </accessibility>
-                                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                            <state key="normal" title="Button" image="brain.head.profile" catalog="system">
-                                                                <imageReference key="backgroundImage" image="brain.head.profile" catalog="system" symbolScale="small"/>
-                                                            </state>
-                                                            <buttonConfiguration key="configuration" style="plain" title="Category" cornerStyle="large" titleAlignment="center">
-                                                                <backgroundConfiguration key="background" strokeWidth="3" strokeOutset="4">
-                                                                    <color key="strokeColor" red="0.078431372550000003" green="0.48627450979999998" blue="0.3803921569" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                </backgroundConfiguration>
-                                                                <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="24"/>
-                                                                <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            </buttonConfiguration>
-                                                            <connections>
-                                                                <action selector="cabecaTouch" destination="BYZ-38-t0r" eventType="touchUpInside" id="acb-P8-5dp"/>
-                                                            </connections>
-                                                        </button>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
                                                     </subviews>
                                                 </collectionViewCellContentView>
                                                 <size key="customSize" width="158" height="140"/>
                                                 <connections>
-                                                    <outlet property="buttonLabel" destination="fLk-ox-RXQ" id="lIu-GH-jR4"/>
+                                                    <outlet property="buttonLabel" destination="fxk-Ig-0wR" id="9qR-Y1-hul"/>
                                                 </connections>
                                             </collectionViewCell>
                                         </cells>
