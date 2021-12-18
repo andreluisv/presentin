@@ -40,6 +40,23 @@ class ViewController: UIViewController {
         present(vc, animated: true)
     }
     
+    @IBAction func shareText() {
+        // text to share
+       let text = "Olá amigo, use esse link para comprar o presente certo para mim. :)"
+       let text2 = "Basta clicar em \"Match\" e buscar pelo meu username: \"andrevas\""
+       
+       // set up activity view controller
+       let textToShare = [ text, text2 ]
+       let activityViewController = UIActivityViewController(activityItems: textToShare, applicationActivities: nil)
+       activityViewController.popoverPresentationController?.sourceView = self.view // so that iPads won't crash
+       
+       // exclude some activity types from the list (optional)
+//       activityViewController.excludedActivityTypes = [ UIActivity.ActivityType.airDrop, UIActivity.ActivityType.postToFacebook ]
+       
+       // present the view controller
+       self.present(activityViewController, animated: true, completion: nil)
+    }
+    
     @IBAction func compartilharTouch() {
         let vc = storyboard?.instantiateViewController(withIdentifier: "begin_match") as! InicioMatchViewController
         present(vc, animated: true)
