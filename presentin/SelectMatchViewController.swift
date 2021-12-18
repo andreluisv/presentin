@@ -52,7 +52,7 @@ class SelectMatchViewController: UIViewController, UICollectionViewDataSource, U
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let collectionViewCell = selectMatchCollectionView.dequeueReusableCell(withReuseIdentifier: "viewCell", for: indexPath) as! SelectMatchCollectionViewCell
         let buttonLabel = SelectMatchModel.matchButtons[indexPath.row].label
-        collectionViewCell.buttonLabel.setTitle(buttonLabel, for: .normal)
+        collectionViewCell.buttonLabel.text = buttonLabel
         return collectionViewCell
     }
     

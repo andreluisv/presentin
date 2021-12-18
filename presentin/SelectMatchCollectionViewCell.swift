@@ -10,6 +10,6 @@ import UIKit
 
 class SelectMatchCollectionViewCell : UICollectionViewCell {
     
-    @IBOutlet weak var buttonLabel: UIButton!
+    @IBOutlet weak var buttonLabel: UILabel!
 
 }
