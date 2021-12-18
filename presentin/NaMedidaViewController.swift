@@ -10,9 +10,19 @@ import UIKit
 class NaMedidaViewController: UIViewController {
     
     var match : Bool! = false
+    @IBOutlet var checkImage: UIImageView!
+    @IBOutlet var label: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        if(match) {
+            label.text = "Na medida"
+            checkImage.image = UIImage(systemName:"checkmark")
+        }else {
+            label.text = "Ops! Essa não é a medida certa"
+            checkImage.image = UIImage(systemName:"exclamationmark")
+        }
+        
         // Do any additional setup after loading the view.
         print(match)
     }
