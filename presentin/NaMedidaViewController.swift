@@ -19,7 +19,7 @@ class NaMedidaViewController: UIViewController {
             label.text = "Na medida"
             checkImage.image = UIImage(systemName:"checkmark")
         }else {
-            label.text = "Ops! Essa não é a medida certa"
+            label.text = "Ops, não esta na medida"
             checkImage.image = UIImage(systemName:"exclamationmark")
         }
         
