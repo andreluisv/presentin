@@ -15,16 +15,15 @@ class NaMedidaViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        if(match) {
+        if(self.match!) {
             label.text = "Na medida"
             checkImage.image = UIImage(systemName:"checkmark")
         }else {
-            label.text = "Ops, não esta na medida"
+            label.text = "Ops, não está na medida"
             checkImage.image = UIImage(systemName:"exclamationmark")
         }
         
         // Do any additional setup after loading the view.
-        print(match)
     }
     
     @IBAction func nextTouch() {

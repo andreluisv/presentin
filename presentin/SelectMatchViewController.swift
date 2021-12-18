@@ -86,55 +86,55 @@ class SelectMatchViewController: UIViewController, UICollectionViewDataSource, U
             if (medida1Input.text != nil){
                 let medidaUserFront = Double(medida1Input.text!) ?? 0
                 let medidaUserBack = Double(user?.measures.cabeca.circunferencia ?? 0)
-                vc.match = calculateMatch(medidaUserFront, medidaUserBack, 95) || vc.match
+                vc.match = calculateMatch(medidaUserFront, medidaUserBack, 95) && vc.match
             }
             if (medida2Input.text != nil){
                 let medidaUserFront = Double(medida2Input.text!) ?? 0
                 let medidaUserBack = Double(user?.measures.cabeca.furosOrelha ?? 0)
-                vc.match = calculateMatch(medidaUserFront, medidaUserBack, 95) || vc.match
+                vc.match = calculateMatch(medidaUserFront, medidaUserBack, 99) && vc.match
             }
             if (medida1Input.text != nil){
                 let medidaUserFront = Double(medida1Input.text!) ?? 0
                 let medidaUserBack = Double(user?.measures.cabeca.pescoco ?? 0)
-                vc.match = calculateMatch(medidaUserFront, medidaUserBack, 95) || vc.match
+                vc.match = calculateMatch(medidaUserFront, medidaUserBack, 95) && vc.match
             }
         }else if (btnLabel == "Torso"){
             if (medida1Input.text != nil){
                 let medidaUserFront = Double(medida1Input.text!) ?? 0
                 let medidaUserBack = Double(user?.measures.torso.busto ?? 0)
-                vc.match = calculateMatch(medidaUserFront, medidaUserBack, 95) || vc.match
+                vc.match = calculateMatch(medidaUserFront, medidaUserBack, 95) && vc.match
             }
             if (medida2Input.text != nil){
                 let medidaUserFront = Double(medida2Input.text!) ?? 0
                 let medidaUserBack = Double(user?.measures.torso.cintura ?? 0)
-                vc.match = calculateMatch(medidaUserFront, medidaUserBack, 95) || vc.match
+                vc.match = calculateMatch(medidaUserFront, medidaUserBack, 95) && vc.match
             }
             if (medida1Input.text != nil){
                 let medidaUserFront = Double(medida1Input.text!) ?? 0
                 let medidaUserBack = Double(user?.measures.torso.quadril ?? 0)
-                vc.match = calculateMatch(medidaUserFront, medidaUserBack, 95) || vc.match
+                vc.match = calculateMatch(medidaUserFront, medidaUserBack, 95) && vc.match
             }
         }else if (btnLabel == "Pernas"){
             if (medida1Input.text != nil){
                 let medidaUserFront = Double(medida1Input.text!) ?? 0
                 let medidaUserBack = Double(user?.measures.pernas.coxa ?? 0)
-                vc.match = calculateMatch(medidaUserFront, medidaUserBack, 95) || vc.match
+                vc.match = calculateMatch(medidaUserFront, medidaUserBack, 95) && vc.match
             }
             if (medida2Input.text != nil){
                 let medidaUserFront = Double(medida2Input.text!) ?? 0
                 let medidaUserBack = Double(user?.measures.pernas.panturrilha ?? 0)
-                vc.match = calculateMatch(medidaUserFront, medidaUserBack, 95) || vc.match
+                vc.match = calculateMatch(medidaUserFront, medidaUserBack, 95) && vc.match
             }
             if (medida1Input.text != nil){
                 let medidaUserFront = Double(medida1Input.text!) ?? 0
                 let medidaUserBack = Double(user?.measures.pernas.bainha ?? 0)
-                vc.match = calculateMatch(medidaUserFront, medidaUserBack, 95) || vc.match
+                vc.match = calculateMatch(medidaUserFront, medidaUserBack, 95) && vc.match
             }
         }else if (btnLabel == "Pés"){
             if (medida1Input.text != nil){
                 let medidaUserFront = Double(medida1Input.text!) ?? 0
                 let medidaUserBack = Double(user?.measures.pes.comprimento ?? 0)
-                vc.match = calculateMatch(medidaUserFront, medidaUserBack, 95) || vc.match
+                vc.match = calculateMatch(medidaUserFront, medidaUserBack, 95) && vc.match
             }
         }
         present(vc, animated: true)
@@ -142,7 +142,10 @@ class SelectMatchViewController: UIViewController, UICollectionViewDataSource, U
     
     func calculateMatch(_ medidaUserFront: Double, _ medidaUserBack: Double, _ limit: Int) -> Bool {
         let num = min(medidaUserFront, medidaUserBack)
-        let den = max(medidaUserFront, medidaUserBack, 1)
+        let den = max(medidaUserFront, medidaUserBack)
+        if (den == 0) {
+            return false
+        }
         let result = Int(100 * num/den)
         return result >= limit
     }
