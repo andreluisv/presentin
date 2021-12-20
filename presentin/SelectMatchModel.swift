@@ -13,10 +13,10 @@ class SelectMatchModel {
     static let shared = SelectMatchModel()
     
     static let matchButtons = [
-        CategoryButton(label: "Cabeça", fields: ["Circunferencia", "Furos na orelha", "Pescoço"]),
+        CategoryButton(label: "Cabeça", fields: ["Circunferência", "Furos na orelha", "Pescoço"]),
         CategoryButton(label: "Torso", fields: ["Busto", "Cintura", "Quadril"]),
         CategoryButton(label: "Pernas", fields: ["Coxa", "Panturrilha", "Bainha"]),
-        CategoryButton(label: "Pés", fields: ["Comprimento"])
+        CategoryButton(label: "Pés", fields: ["Tamanho"])
     ]
     
     let users = [

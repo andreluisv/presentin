@@ -26,10 +26,10 @@
 		<dict>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>dikastisPresentin</string>
+				<string>presentin</string>
 			</array>
 			<key>CFBundleURLName</key>
-			<string>com.dikastis.presentin</string>
+			<string>com.presentin</string>
 		</dict>
 	</array>
 </dict>

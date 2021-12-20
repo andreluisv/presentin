@@ -10,10 +10,19 @@ import UIKit
 class ViewController: UIViewController {
     
     var delegate: infoDelegate!
+    @IBOutlet weak var userImage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         delegate = MeasureModel().self
+        let users = [
+            SelectMatchFactory.createDaniel(),
+            SelectMatchFactory.createRods(),
+            SelectMatchFactory.createAndre(),
+            SelectMatchFactory.createLoureiro(),
+        ]
+        userImage.image = UIImage(named: users[Int.random(in: 0..<4)].username)
+        userImage.layer.cornerRadius = 25
     }
     
     @IBAction func cabecaTouch() {
@@ -42,7 +51,7 @@ class ViewController: UIViewController {
     
     @IBAction func shareText() {
         // text to share
-       let text = "Olá amigo, use esse link para comprar o presente certo para mim. :)"
+       let text = "Olá amigo, use esse link presentin:// para comprar o presente certo para mim. :)"
        let text2 = "Basta clicar em \"Match\" e buscar pelo meu username: \"andrevas\""
        
        // set up activity view controller

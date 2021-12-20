@@ -33,13 +33,15 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="person.fill" catalog="system" id="xiA-jq-hkJ">
-                                        <rect key="frame" x="329" y="61" width="63" height="52"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="xiA-jq-hkJ">
+                                        <rect key="frame" x="342" y="61" width="50" height="47"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="6Bp-1Q-yAG"/>
+                                            <constraint firstAttribute="width" constant="50" id="HjB-4c-hSg"/>
+                                        </constraints>
                                     </imageView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="bottomMargin" secondItem="xiA-jq-hkJ" secondAttribute="bottom" constant="42" id="DeA-Ug-U7y"/>
                                     <constraint firstAttribute="trailing" secondItem="xiA-jq-hkJ" secondAttribute="trailing" constant="22" id="RJH-3O-py0"/>
                                     <constraint firstAttribute="height" constant="120" id="Rln-uz-oT0"/>
                                     <constraint firstItem="xiA-jq-hkJ" firstAttribute="top" secondItem="4cQ-Yp-HWW" secondAttribute="top" constant="59.5" id="hdw-1H-OLW"/>
@@ -242,6 +244,9 @@
                             <constraint firstItem="4cQ-Yp-HWW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="tvx-sb-XQI"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="userImage" destination="xiA-jq-hkJ" id="NeO-IQ-k50"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -419,7 +424,7 @@
                                             <constraint firstAttribute="width" constant="199" id="mCi-ps-qz6"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="gray" title="Voltar">
+                                        <buttonConfiguration key="configuration" style="gray" title="Início">
                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="baseBackgroundColor" red="0.76862745099999996" green="0.76862745099999996" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -829,7 +834,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5XU-oG-pSH">
                                 <rect key="frame" x="0.0" y="190" width="414" height="706"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comprimento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hU0-6a-B2y">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tamanho" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hU0-6a-B2y">
                                         <rect key="frame" x="27" y="93" width="360" height="28"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                         <nil key="textColor"/>
@@ -963,7 +968,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Analisando match com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wyZ-oC-D3i">
-                                        <rect key="frame" x="50" y="20" width="313" height="39"/>
+                                        <rect key="frame" x="50.5" y="20" width="313" height="39"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -974,9 +979,8 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="aph-i6-Hfw">
-                                        <rect key="frame" x="162" y="129.5" width="90" height="87"/>
-                                        <color key="backgroundColor" systemColor="labelColor"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aph-i6-Hfw">
+                                        <rect key="frame" x="162" y="128" width="90" height="90"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="90" id="JXG-Xp-H1e"/>
                                             <constraint firstAttribute="height" constant="90" id="PvT-ZW-qwj"/>
@@ -1085,6 +1089,7 @@ bom match!</string>
                         <outlet property="nameField" destination="1LU-fr-aQf" id="axE-0r-NS8"/>
                         <outlet property="nextButton" destination="CRi-dq-kGg" id="MbX-tS-EVD"/>
                         <outlet property="textField" destination="FEJ-xf-l9f" id="CHo-oN-8bM"/>
+                        <outlet property="userImage" destination="aph-i6-Hfw" id="SRg-KM-ung"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TOG-sk-8i4" sceneMemberID="firstResponder"/>
